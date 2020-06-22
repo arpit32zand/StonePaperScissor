@@ -1,4 +1,4 @@
-const finalColumn = document.querySelector("#comp");
+var temp = -1;
 const DECIDERARR = [
   {
     name: "stone",
@@ -35,7 +35,10 @@ const selector = (decider) => {
 };
 
 const randomSelector = () => {
-  let index = Math.floor(Math.random() * 3);
+  do {
+    var index = Math.floor(Math.random() * 3);
+  } while (temp === index);
+  temp = index;
   return index;
 };
 
