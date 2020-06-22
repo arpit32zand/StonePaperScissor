@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(196, 188, 188);
+  background-color: rgb(13, 13, 43);
 }
 
 .handles {
@@ -37,6 +37,7 @@ body {
 
 .results {
   display: grid;
+  color: aliceblue;
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
 }
