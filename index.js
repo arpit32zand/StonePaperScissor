@@ -2,17 +2,20 @@ var temp = -1;
 const DECIDERARR = [
   {
     name: "stone",
-    value: "✊",
+    value: "./Images/stone.png",
+    alt: "✊",
     beats: "scissor",
   },
   {
     name: "paper",
-    value: "🖐️",
+    value: "./Images/paper.png",
+    alt: "🖐️",
     beats: "stone",
   },
   {
     name: "scissor",
-    value: "✌️",
+    value: "./Images/scissor.png",
+    alt: "✌️",
     beats: "paper",
   },
 ];
@@ -57,16 +60,26 @@ const resultCalc = (deci, comdeci) => {
 };
 
 const announcer = (deci, winn) => {
-  const div = document.createElement("div");
+  const img = document.createElement("img");
   DECIDERARR.map((key) => {
     if (key.name === deci) {
-      div.innerText = key.value;
-      //   console.log(key.value);
+      img.src = key.value;
+      img.alt = key.alt;
     }
   });
-  div.classList.add("history");
-  if (winn) div.classList.add("winner");
-  document.querySelector("#comp").after(div);
+  img.classList.add("history");
+  if (winn) img.classList.add("winner");
+  // const div = document.createElement("div");
+  // // DECIDERARR.map((key) => {
+  // //   if (key.name === deci) {
+  // //     div.innerText = "<img scr={key.value} />";
+  // //     console.log(key.value);
+  // //   }
+  // // });
+  // // div.classList.add("history");
+  // // if (winn) div.classList.add("winner");
+  // div.innerHTML = img;
+  document.querySelector("#comp").after(img);
   //   finalColumn.after(div);
 };
 

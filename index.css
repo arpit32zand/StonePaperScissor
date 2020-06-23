@@ -25,8 +25,13 @@ body {
   margin: 20px;
   font-size: 70px;
   background: none;
+  font-size: 70px;
   border: none;
   outline: none;
+}
+
+.image {
+  height: 120px;
 }
 
 .res-score {
@@ -51,11 +56,11 @@ body {
 }
 
 .history {
-  font-size: 35px;
+  height: 70px;
   opacity: 0.5;
 }
 
 .winner {
-  font-size: 40px;
+  height: 80px;
   opacity: 1;
 }

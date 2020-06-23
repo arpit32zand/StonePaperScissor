@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="index.css" />
     <script src="index.js"></script>
-    <title>Document</title>
+    <title>Stone Paper Scissor</title>
   </head>
   <body>
     <div class="handles">
-      <button class="butt" onclick="selector('stone')">✊</button>
-      <button class="butt" onclick="selector('paper')">🖐️</button>
-      <button class="butt" onclick="selector('scissor')">✌️</button>
+      <button class="butt" onclick="selector('stone')"><img class="image" src="./Images/stone.png" alt="✊"></button>
+      <button class="butt" onclick="selector('paper')"><img class="image" src="./Images/paper.png" alt="🖐️"></button>
+      <button class="butt" onclick="selector('scissor')"><img class="image" src="./Images/scissor.png" alt="✌️"></button>
     </div>
     <div class="results">
       <div class="res-score" id="you">
@@ -24,6 +24,8 @@
       </div>
       <!-- <div class="history winner">✊</div>
       <div class="history">✌️</div> -->
+      <!-- <div><img class="history winner" src="./Images/scissor.png" alt="✌️"></div>
+      <div><img class="history" src="./Images/paper.png" alt="🖐️"></div> -->
     </div>
   </body>
 </html>
